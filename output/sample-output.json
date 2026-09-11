@@ -1,0 +1,48 @@
+{
+    "emails": [
+        {
+            "email": "jane.doe@alueducation.com",
+            "category": "ALU Official",
+            "status": "Valid"
+        },
+        {
+            "email": "john.black@alumni.alueductaion.com",
+            "category": "External",
+            "status": "Valid"
+        },
+        {
+            "email": "help.desk@si.alueducation.com",
+            "category": "ALU SI",
+            "status": "Valid"
+        },
+        {
+            "email": "admin@alueducation.com",
+            "category": "ALU Official",
+            "status": "Valid"
+        },
+        {
+            "email": "scam@fakealueducation.com",
+            "category": "External",
+            "status": "Valid"
+        },
+        {
+            "email": "user@gmail.com",
+            "category": "External",
+            "status": "Valid"
+        }
+    ],
+    "credit_cards": [
+        "XXXX-XXXX-XXXX-0256",
+        "XXXX-XXXX-XXXX-9038",
+        "XXXX-XXXX-XXXX-0366"
+    ],
+    "urls": [
+        "https://portal.alueducation.com/dashboard?user=123",
+        "http://sub.domain.co.rw/path/to/resource#section"
+    ],
+    "phone_numbers": [
+        "250 788 123",
+        "4782 8923 0964",
+        "9928-0366-2222"
+    ]
+}
