@@ -1,7 +1,7 @@
 This is the raw-text input.
-Contact support at jane.doe@alueducation.com or alumni team at john.black@alumni.alueductaion.com .
+Contact support at jane.doe@alueducation.com or alumni team at john.black@alumni.alueducation.com .
 For student information queries, reach out to help.desk@si.alueducation.com .
-Unsafe injection attempt: admin@alueducation.com<script>alert(1)</script> or malicious'; DROP TABLE Users;--@alueductaion.com .
+Unsafe injection attempt: admin@alueducation.com<script>alert(1)</script> or malicious'; DROP TABLE Users;--@alueducation.com .
 Invalid domains: scam@fakealueducation.com or user@gmail.com .
 
 Our portal can be accessed at https://portal.alueducation.com/dashboard?user=123 or http://sub.domain.co.rw/path/to/resource#section .
