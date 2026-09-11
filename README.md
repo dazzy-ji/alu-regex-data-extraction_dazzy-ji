@@ -19,7 +19,7 @@ A regex based program that can extract specific types of structured data from ra
 1. Clone the repository and move to the directory:
     cd alu-regex-data-extration_dazzy-ji
 
-2. Run the pyhton script
+2. Run the python script
     Bash
     python3 src/main.py
 
