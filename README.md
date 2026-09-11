@@ -7,6 +7,7 @@ A regex based program that can extract specific types of structured data from ra
 - **Security Requirement**
     - **Data Privacy**: Masks credit card numbers ('****-****-****-XXXX')
     - **Sanitization**: Strips inline script tags before extraction
+    - **Correctness**: Ensures that the phone number entered is valid
 
 ## Getting Started
 
@@ -14,12 +15,12 @@ A regex based program that can extract specific types of structured data from ra
 - Python3 installed in your system. 
 
 ### Running the Application
-1. Clone the repository and move to the directory:
 ```bash
+1. Clone the repository and move to the directory:
     cd alu-regex-data-extration_dazzy-ji
 
-1. Run the pyhton script
+2. Run the pyhton script
     Bash
     python3 src/main.py
 
-2. Check the generated output inside output/sample-output.json
+3. Check the generated output inside output/sample-output.json

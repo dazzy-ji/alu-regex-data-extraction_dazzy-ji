@@ -61,9 +61,35 @@ def extract_validate_credit_cards(text: str) -> list[str]:
 
 #Phone number extraction
 def extract_phone_numbers(text: str) -> list[str]:
+    #Identify credit card numbers
+    card_pattern = re.compile(r'\b(?:\d{4}[-\s]?){3}\d{4}\b')
+    credit_card_matches = set(card_pattern.findall(text))
+
+    #Extract potential phone numbers
     phone_pattern = re.compile(
-        r'\b(?:\+\d{1,3}[\s.-]?)?(?:\(\d{1,4}\)|\d{1,4})[\s.-]?\d{3,4}[\s.-]?\d{3,4}\b')
-    return phone_pattern.findall(text)
+        r'\b(?:\+\d{1,3}[\s.-]?)?\(?\d{2,4}\)?[\s.-]?\d{3,4}[\s.-]?\d{3,4}\b'
+    )
+    raw_matches = phone_pattern.findall(text)
+
+    valid_phone_numbers = []
+    for match in raw_matches:
+        #Exclude credit card matches
+        if any(match in card for card in credit_card_matches):
+            continue
+
+        digits_only = re.sub(r'\D', '', match)
+
+        #Checks if the number is between 7 to 12 digits
+        if not (7 <= len(digits_only) <= 12):
+            continue
+
+        #Rejects repeating sequences
+        if len(set(digits_only)) == 1:
+            continue
+
+        valid_phone_numbers.append(match)
+
+    return valid_phone_numbers
 
 #URL extraction
 def extract_secure_urls(text: str) -> list[str]:

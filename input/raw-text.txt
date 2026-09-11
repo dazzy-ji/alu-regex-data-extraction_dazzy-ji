@@ -1,4 +1,4 @@
-Welcome to ALU log output.
+This is the raw-text input.
 Contact support at jane.doe@alueducation.com or alumni team at john.black@alumni.alueductaion.com .
 For student information queries, reach out to help.desk@si.alueducation.com .
 Unsafe injection attempt: admin@alueducation.com<script>alert(1)</script> or malicious'; DROP TABLE Users;--@alueductaion.com .
@@ -7,8 +7,8 @@ Invalid domains: scam@fakealueducation.com or user@gmail.com .
 Our portal can be accessed at https://portal.alueducation.com/dashboard?user=123 or http://sub.domain.co.rw/path/to/resource#section .
 Invalid URLs: htp://bad-url.com or javascript:alert(1)
 
-For our helplines, call: +250 788 123 456
-Invalid phone numbers: 12345 or +99999999999999 .
+For our helplines, call: +250 783 259 968, +1-738-372-9288
+Invalid phone numbers: 56789 or +000000000000 .
 
 Payment details:
 Valid VISA: 4782 8923 0964 0256
