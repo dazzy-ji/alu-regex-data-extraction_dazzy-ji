@@ -7,10 +7,13 @@ import re
 def extract_validate_emails(text: str) -> list[dict]:
     #Regex email format
     email_format = re.compile(r'\b[A-Za-z0-9._%=-]+@[A-Za-z.-]+\.[A-Za-z]{2,}\b')
+    #All emails are extracted
     base_emails = email_format.findall(text)
 
+    #An array to store validated emails
     validated_emails = []
 
+    #Emails are seperated into different categories based on the domain name
     for email in base_emails:
         # Separating Emails based on ALU domain
         email_lower = email.lower()
@@ -23,6 +26,7 @@ def extract_validate_emails(text: str) -> list[dict]:
         else:
             category = "External"
 
+        #Validated emails are added to the array and set into a dictionary
         validated_emails.append(
             {
                 "email": email,
@@ -39,7 +43,10 @@ def extract_validate_credit_cards(text: str) -> list[str]:
     card_pattern = re.compile(r'\b(?:\d{4}[-\s]?){3}\d{4}\b')
     base_cards = card_pattern.findall(text)
 
+    #Array initiated for masked cards
     masked_cards = []
+
+    #Credit cards are masked so that only the last 4 digits appear
     for card in base_cards:
         digits_only = re.sub(r'\D', '', card)
 
