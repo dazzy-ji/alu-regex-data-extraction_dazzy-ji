@@ -9,12 +9,14 @@ def extract_validate_emails(text: str) -> list[dict]:
     email_format = re.compile(r'\b[A-Za-z0-9._%=-]+@[A-Za-z.-]+\.[A-Za-z]{2,}\b')
     #All emails are extracted
     base_emails = email_format.findall(text)
-
+    
     #An array to store validated emails
     validated_emails = []
 
     #Emails are seperated into different categories based on the domain name
     for email in base_emails:
+        if re.search(r'[<>"\']', email):
+            continue
         # Separating Emails based on ALU domain
         email_lower = email.lower()
         if email_lower.endswith("@alueducation.com"):
